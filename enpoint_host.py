@@ -32,7 +32,7 @@ def get_info():
 
     current_day = current_utc_time.strftime('%A')
     github_repo_url = "https://github.com/MoonBoyMubarak/api.git"
-    github_file_url = 
+    github_file_url =  "https://github.com/MoonBoyMubarak/api/blob/main/enpoint_host.py"
 
     response = {
         'MoonBoy': slack_name,
