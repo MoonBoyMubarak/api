@@ -19,11 +19,11 @@ def validate_utc_time(current_time):
 
 @app.route('/endpoint', methods=['GET'])
 def get_info():
-    slack_name = request.args.get('slack_name')
-    track = request.args.get('track')
+    slack_name = request.args.get('MoonBoy')
+    track = request.args.get('Backend')
 
     if not slack_name or not track:
-        return jsonify({'error': 'Both slack_name and track are required'}), 400
+        return jsonify({'error': 'Both MoonBoy and Backend are required'}), 400
 
     current_utc_time = get_current_utc_time()
 
